@@ -1,0 +1,30 @@
+---
+title: "R Notebook Trust Demo (R Markdown)"
+output:
+  html_notebook: default
+---
+
+# R Notebook Trust Demo
+
+This notebook demonstrates how saved HTML/JavaScript output behaves in **R Markdown (R Notebook)**.
+
+Unlike Jupyter's explicit trust banner, R Markdown notebooks (rendered to HTML) will execute embedded JavaScript when the output HTML is opened in a browser or the RStudio Viewer.
+
+> **Teaching goal:** Show that saved outputs can include active content. Only use trusted sources.
+
+## Malicious-output cell (benign demo)
+
+The chunk below emits a small JavaScript `alert()` via raw HTML. It uses only base R (`cat`) and knitr's `results='asis'` to place HTML directly into the document.
+
+```{r echo=TRUE, results='asis'}
+# Emits raw HTML/JS into the notebook output (benign demo)
+cat("<script>alert('⚠️ This is why notebooks need a trust model! (R Markdown)');</script>")
+```
+
+## Instructions
+
+1. Click **Knit** → **Knit to HTML Notebook** (or run: `rmarkdown::render('untrusted_demo.Rmd')`).  
+2. RStudio will generate an `.nb.html` file (e.g., `untrusted_demo.nb.html`).  
+3. Close the viewer, then reopen the `.nb.html` in your browser or RStudio Viewer.  
+   - The JavaScript **alert** will appear without an explicit trust prompt.  
+4. Discuss how this differs from Jupyter's trust model and why you should never open/render untrusted notebooks.
