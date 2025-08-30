@@ -3,7 +3,7 @@
     <img alt="GitHub" src="https://img.shields.io/badge/License-MIT-blue.svg">
     <img src="https://zenodo.org/badge/196325231.svg" alt="DOI"></a>
 
-## *Note: This paper was presented at my undergraduate college conference, International Conference on Security, where it won the Best Paper Award. It is not intended as groundbreaking ML research, but as an early exploration of the Python vs R debate from a security perspective. While the approach simplifies security (which depends more on dependencies and coding practices than language choice), I keep it here as part of my growth journey and for its teaching value.*
+#### *Note: This paper was presented at my undergraduate college conference, International Conference on Security, where it won the Best Paper Award. It is not intended as groundbreaking ML research, but as an early exploration of the Python vs R debate from a security perspective. While the approach simplifies security (which depends more on dependencies and coding practices than language choice), I keep it here as part of my growth journey and for its teaching value.*
 
 
 # Python vs R for Machine Learning
