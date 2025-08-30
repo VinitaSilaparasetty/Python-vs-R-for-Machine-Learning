@@ -22,6 +22,11 @@ This paper is a comparative study on Python and R for Machine Learning. It highl
 
 In conclusion, Python is found to be more secure, powerful and versatile for Machine Learning as opposed to R.
 
+```bash
+cd code\py\security_tests
+python dashboard_attacks.py
+```
+
 #### Keywords: Python, R, Artificial Intelligence, Data Science, Machine Learning
 
 ### Verdict
